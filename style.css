@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Staatliches', cursive;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bg-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    user-select: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+select.select-color {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.custom-color {
+    position: relative;
+    display: none;
+}
+
+.custom-color .container-custom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.custom-color .input-block {
+    display: flex;
+}
+
+.custom-color .input-block input[type=text] {
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+}
+
+.custom-color .input-block input[type=color] {
+    width: 50px;
+    height: 40px;
+    border: none;
+}
+
+.custom-color button {
+    width: 300px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    margin-top: 10px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Playing with Colors - Change Color</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="bg-main" id="bg-main">🢃 Selecionar Cor 🢃</div>
+
+        <select name="selectColors" id="select-color" class="select-color" onchange="changeColor(this)">
+            <option value="0" disabled selected>- Selecionar Cores Padrões -</option>
+            <option value="#ff0000">Vermelho</option>
+            <option value="#ffff00">Amarelo</option>
+            <option value="#ffa500">Laranja</option>
+            <option value="#993399 ">Roxo</option>
+            <option value="#0000ff ">Azul</option>
+            <option value="#008000 ">Verde</option>
+            <option value="0" disabled>- Cor Customizada -</option>
+            <option value="custom">Modificado</option>
+            <option value="0" disabled>- Cores Adicionadas -</option>
+
+        </select>
+
+        <div class="custom-color" id="custom-color">
+            <form class="container-custom" id="form-create" method="POST">
+                <div class="input-block">
+                    <input type="text" placeholder="Nome da Cor" name="nameColor" maxlength="9">
+                    <input type="color" name="colorCode">
+                </div>
+                <button type="button" id="create-color">Criar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
